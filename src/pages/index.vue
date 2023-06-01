@@ -102,4 +102,13 @@
 import ProjectCard from '../components/ProjectCard.vue';
 import SpotifyPlayer from '../components/SpotifyPlayer.vue';
 import Welcome from '../components/Welcome.vue';
+
+useSeoMeta({
+    title: 'anivire',
+    ogTitle: 'anivire',
+    description: '2D artist and developer',
+    ogDescription: '2D artist and developer',
+    ogImage: '../public/preview.png',
+    ogImageAlt: '../public/preview.png'
+})
 </script>
