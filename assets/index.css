@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Hubot Sans';
+  src:
+    url('assets/Hubot-Sans.woff2') format('woff2 supports variations'),
+    url('assets/Hubot-Sans.woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-stretch: 75% 200%;
+}
+
+@layer base {
+   :root {
+        --color-a-white: #F0F0F0;
+        --color-a-black: #1E1C1D;
+        --color-a-pink: #C693E5;
+   }
+}
+
+:root {
+    background-color: var(--color-a-white);
+}
+
+h1 {
+    font-family: 'Hubot Sans';
+    font-weight: 900;
+    font-stretch: 125%;
+    line-height: 3rem;
+}
