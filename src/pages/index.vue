@@ -69,17 +69,17 @@
                 </h1>
             </a>
             <div class="grid grid-cols-3 gap-5">
-                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full col-span-2" width="600"             format="png" src="/images/art/4.png"/>
-                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full" width="300"                        format="png" src="/images/art/8.png"/>
-                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full" width="300"                        format="png" src="/images/art/3.png"/>
-                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full" width="300"                        format="png" src="/images/art/5.png"/>
-                <NuxtImg loading="lazy" class="object-cover object-top rounded-3xl h-full max-h-96 w-full" width="300"             format="png" src="/images/art/1.png"/>
-                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full" width="300"                        format="png" src="/images/art/6.png"/>
-                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full col-span-2" width="300"             format="jpg" src="/images/art/9.jpg"/>
-                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full col-span-2" width="600"             format="png" src="/images/art/7.png"/>
-                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full" width="300"                        format="png" src="/images/art/2.png"/>
+                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full col-span-2" width="1200"             format="png" src="/images/art/4.png"/>
+                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full" width="600"                        format="png" src="/images/art/8.png"/>
+                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full" width="600"                        format="png" src="/images/art/3.png"/>
+                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full" width="600"                        format="png" src="/images/art/5.png"/>
+                <NuxtImg loading="lazy" class="object-cover object-top rounded-3xl h-full max-h-96 w-full" width="600"             format="png" src="/images/art/1.png"/>
+                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full" width="600"                        format="png" src="/images/art/6.png"/>
+                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full col-span-2" width="600"             format="jpg" src="/images/art/9.jpg"/>
+                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full col-span-2" width="1200"             format="png" src="/images/art/7.png"/>
+                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full" width="600"                        format="png" src="/images/art/2.png"/>
                 <NuxtImg loading="lazy" class="object-cover object-top rounded-3xl h-full max-h-96 w-full col-span-3" width="600"  format="png" src="/images/art/10.png"/>
-            </div>../
+            </div>
         </div>
         <div id="about" class="flex flex-col gap-5 px-10 mb-24">
             <div class="flex flex-col items-center justify-between gap-5">

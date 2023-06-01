@@ -20,7 +20,7 @@
         <NuxtImg 
             v-if="cover"
             :src="cover"
-            width="150"
+            width="600"
             :class="cover == '../public/scrapped-2.gif' ? 'h-44' : ''"
             class="rounded-lg w-full object-cover"
         />
