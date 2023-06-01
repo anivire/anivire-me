@@ -78,7 +78,7 @@
                 <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full col-span-2" width="600"             format="jpg" src="/images/art/9.jpg"/>
                 <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full col-span-2" width="1200"             format="png" src="/images/art/7.png"/>
                 <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full" width="600"                        format="png" src="/images/art/2.png"/>
-                <NuxtImg loading="lazy" class="object-cover object-top rounded-3xl h-full max-h-96 w-full col-span-3" width="600"  format="png" src="/images/art/10.png"/>
+                <NuxtImg loading="lazy" class="object-cover object-top rounded-3xl h-full max-h-96 w-full col-span-3" width="1600"  format="png" src="/images/art/10.png"/>
             </div>
         </div>
         <div id="about" class="flex flex-col gap-5 px-10 mb-24">
