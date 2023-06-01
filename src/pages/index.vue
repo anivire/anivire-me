@@ -1,12 +1,9 @@
 <template>
-    <div class="flex flex-col gap-10">
+    <div class="flex flex-col gap-24">
         <Welcome/>
-        <div id="about" class="flex flex-col gap-5 my-24 px-10">
-            <SpotifyPlayer/>
-        </div>
         <div id="projects" class="flex flex-col gap-5 px-10">
             <a href="https://github.com/anivire">
-                <h1 class="text-2xl flex flex-row justify-between items-center cursor-pointer p-1 px-3">
+                <h1 class="text-2xl flex flex-row justify-between items-center cursor-pointer">
                     Projects 
                     <Icon name="ri:arrow-right-up-line" class="text-4xl"/>
                 </h1>
@@ -62,6 +59,20 @@
                     :tags="['ASP.Net Core', 'C#', 'HTML', 'CSS']"
                     cover="../public/artist-palace.png"
                 />
+            </div>
+        </div>
+        <div id="about" class="flex flex-col gap-5 px-10 mb-24">
+            <div class="flex flex-col items-center justify-between gap-5">
+                <div class="flex flex-row gap-5 text-ablack text-4xl">
+                    <a href="mailto:anivire.work@gmail.com"><Icon class="hover:scale-125 cursor-pointer transition duration-200 ease-in-out" name="mdi:gmail"/></a>
+                    <a href="https://discordapp.com/users/207839349209956352"><Icon class="hover:scale-125 cursor-pointer transition duration-200 ease-in-out" name="ic:baseline-discord"/></a>
+                    <a href="https://github.com/anivire"><Icon class="hover:scale-125 cursor-pointer transition duration-200 ease-in-out" name="skill-icons:github-light"/></a>
+                    <a href="https://twitter.com/aniv1re"><Icon class="hover:scale-125 cursor-pointer transition duration-200 ease-in-out" name="mdi:twitter"/></a>
+                    <a href="https://www.youtube.com/channel/UCNYYZJ49nb9058Z8NM6OE7A"><Icon class="hover:scale-125 cursor-pointer transition duration-200 ease-in-out" name="mdi:youtube"/></a>
+                    <a href="https://www.behance.net/anivire"><Icon class="hover:scale-125 cursor-pointer transition duration-200 ease-in-out" name="mdi:behance"/></a>
+                </div>
+                <SpotifyPlayer/>
+                <h1 class="text-2xl flex flex-row justify-center">❤</h1>
             </div>
         </div>
     </div>

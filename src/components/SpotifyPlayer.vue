@@ -8,7 +8,13 @@
         />
         <div class="flex flex-col justify-between w-full">
             <div class="flex flex-col">
-                <p class="text-lg font-bold line-clamp-1">{{ song.title }} <Icon name="ri:arrow-right-up-line" class="w-5"/></p>
+                <a 
+                    target="_blank" 
+                    :href="song.url" 
+                    class="text-lg font-bold line-clamp-1">
+                    {{ song.title }} 
+                    <Icon name="ri:arrow-right-up-line" class="w-5"/>
+                </a>
                 <p class="text-sm font-normal"><span v-for="artist, i in song.artists.name">
                     {{ (artist) + (song.artists.name.length != 1 && i + 1 != song.artists.name.length ? ', ' : '') }}
                 </span></p>
@@ -29,7 +35,7 @@
 <script setup lang="ts">
 const { data: song, refresh} = useAsyncData('nowPlaying', () => $fetch('/api/v1/spotify/nowPlaying', { method: 'GET' }));
 
-const timer = setInterval(() => {
+setInterval(() => {
     refresh();
 }, 3000);
 </script>
