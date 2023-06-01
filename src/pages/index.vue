@@ -17,7 +17,7 @@
                     link="https://avault.vercel.app/"
                     description="A web app where user can store all watched anime titles and keep track of new ongoing anime"
                     :tags="['Vue', 'Nuxt', 'Typescript', 'Jikan', 'Supabase']"
-                    cover="/public/images/projects/avault.png"
+                    cover="/images/projects/avault.png"
                 />
                 <ProjectCard
                     icon="vscode-icons:file-type-gamemaker2"
@@ -27,7 +27,7 @@
                     link="https://youkaidrawing.itch.io/scrapped"
                     description="Brackeys 2022.2 seven days long game-jam entry"
                     :tags="['GML', 'Game Jam', 'GameMaker Studio 2']"
-                    cover="/public/images/projects/scrapped.gif"
+                    cover="/images/projects/scrapped.gif"
                 />
                 <ProjectCard
                     icon="vscode-icons:file-type-vue"
@@ -37,7 +37,7 @@
                     link="https://invoke-seven.vercel.app/"
                     description="Easily train your Invoker spell combination skills"
                     :tags="['Vue', 'Typescript']"
-                    cover="/public/images/projects/invoke.png"
+                    cover="/images/projects/invoke.png"
                 />
                 <ProjectCard
                     icon="vscode-icons:file-type-vue"
@@ -47,7 +47,7 @@
                     link="https://svg-avatar-generator.vercel.app/"
                     description="Web app for generating random pattern avatars"
                     :tags="['Vue', 'Typescript']"
-                    cover="/public/images/projects/avatar.png"
+                    cover="/images/projects/avatar.png"
                 />
                 <ProjectCard
                     icon="devicon:csharp"
@@ -57,7 +57,7 @@
                     link="https://github.com/anivire/ArtistPalace"
                     description="A small project aimed at compiling a constantly updated list of artists from all over the world"
                     :tags="['ASP.Net Core', 'C#', 'HTML', 'CSS']"
-                    cover="/public/images/projects/artist-palace.png"
+                    cover="/images/projects/artist-palace.png"
                 />
             </div>
         </div>
@@ -69,16 +69,16 @@
                 </h1>
             </a>
             <div class="grid grid-cols-3 gap-5">
-                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full col-span-2" width="600"             format="png" src="/public/images/art/4.png"/>
-                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full" width="300"                        format="png" src="/public/images/art/8.png"/>
-                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full" width="300"                        format="png" src="/public/images/art/3.png"/>
-                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full" width="300"                        format="png" src="/public/images/art/5.png"/>
-                <NuxtImg loading="lazy" class="object-cover object-top rounded-3xl h-full max-h-96 w-full" width="300"             format="png" src="/public/images/art/1.png"/>
-                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full" width="300"                        format="png" src="/public/images/art/6.png"/>
-                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full col-span-2" width="300"             format="jpg" src="/public/images/art/9.jpg"/>
-                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full col-span-2" width="600"             format="png" src="/public/images/art/7.png"/>
-                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full" width="300"                        format="png" src="/public/images/art/2.png"/>
-                <NuxtImg loading="lazy" class="object-cover object-top rounded-3xl h-full max-h-96 w-full col-span-3" width="600"  format="png" src="/public/images/art/10.png"/>
+                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full col-span-2" width="600"             format="png" src="/images/art/4.png"/>
+                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full" width="300"                        format="png" src="/images/art/8.png"/>
+                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full" width="300"                        format="png" src="/images/art/3.png"/>
+                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full" width="300"                        format="png" src="/images/art/5.png"/>
+                <NuxtImg loading="lazy" class="object-cover object-top rounded-3xl h-full max-h-96 w-full" width="300"             format="png" src="/images/art/1.png"/>
+                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full" width="300"                        format="png" src="/images/art/6.png"/>
+                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full col-span-2" width="300"             format="jpg" src="/images/art/9.jpg"/>
+                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full col-span-2" width="600"             format="png" src="/images/art/7.png"/>
+                <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full" width="300"                        format="png" src="/images/art/2.png"/>
+                <NuxtImg loading="lazy" class="object-cover object-top rounded-3xl h-full max-h-96 w-full col-span-3" width="600"  format="png" src="/images/art/10.png"/>
             </div>../
         </div>
         <div id="about" class="flex flex-col gap-5 px-10 mb-24">
