@@ -8,9 +8,21 @@
             </svg>
         </div>
         <div class="flex flex-row gap-10">
-            <h1 class="uppercase text-sm text-ablack">home</h1>
-            <h1 class="uppercase text-sm text-ablack">art</h1>
-            <h1 class="uppercase text-sm text-ablack">contact</h1>
+            <h1 @click="moveToProjects()" class="uppercase text-sm text-ablack cursor-pointer hover:bg-ablack hover:text-awhite p-1">projects</h1>
+            <h1 class="uppercase text-sm text-ablack cursor-pointer hover:bg-ablack hover:text-awhite p-1">art</h1>
+            <h1 class="uppercase text-sm text-ablack cursor-pointer hover:bg-ablack hover:text-awhite p-1">contact</h1>
         </div>
     </div>
 </template>
+
+<script setup lang="ts">
+const moveToProjects = () => {
+    const scrollTopOffset = document.getElementById("projects")!.getBoundingClientRect().top + document.body.scrollTop - 25;
+
+    window.scrollTo({
+        top: scrollTopOffset,
+        left: 0,
+        behavior: "smooth",
+    });
+}
+</script>

@@ -6,7 +6,7 @@
                 <h1 class="p-5 uppercase text-5xl text-ablack w-fit">i'm</h1>
                 <h1 
                     :class="rotate > 0 ? 'rotate-1' : '-rotate-1' "
-                    class="uppercase text-9xl text-ablack w-fit">{{randomizedUsername}}</h1>
+                    class="uppercase text-9xl text-awhite bg-ablack py-5 pb-3 px-16 w-fit">{{randomizedUsername}}</h1>
             </div>
         </div>
         <h1 class="flex flex-row gap-5 items-center my-3"><Icon name="ri:arrow-down-line" class="animate-bounce"/> Scroll down <Icon name="ri:arrow-down-line"  class="animate-bounce"/></h1>      

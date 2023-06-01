@@ -14,13 +14,14 @@
                     <p>{{date}}</p>
                 </div>
             </div>
-            <h1 class="flex flex-row gap-2 items-center text-3xl">{{title}} <Icon name="ri:arrow-right-up-line"/></h1>
+            <h1 class="flex flex-row gap-2 items-center text-3xl -mb-1">{{title}} <Icon name="ri:arrow-right-up-line"/></h1>
             <p class="font-semibold">{{description}}</p>
         </div>
         <NuxtImg 
             v-if="cover"
             :src="cover"
             width="150"
+            :class="cover == '../public/scrapped-2.gif' ? 'h-44' : ''"
             class="rounded-lg w-full object-cover"
         />
         <div class="flex flex-row flex-wrap gap-3">

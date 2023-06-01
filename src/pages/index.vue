@@ -1,8 +1,16 @@
 <template>
     <div class="flex flex-col gap-10">
         <Welcome/>
-        <div class="flex flex-col gap-5 my-24 px-10">
-            <h1 class="text-2xl flex flex-row justify-between items-center">Projects <Icon name="ri:arrow-right-up-line" class="text-4xl"/></h1>
+        <div id="about" class="flex flex-col gap-5 my-24 px-10">
+            <SpotifyPlayer/>
+        </div>
+        <div id="projects" class="flex flex-col gap-5 px-10">
+            <a href="https://github.com/anivire">
+                <h1 class="text-2xl flex flex-row justify-between items-center cursor-pointer p-1 px-3">
+                    Projects 
+                    <Icon name="ri:arrow-right-up-line" class="text-4xl"/>
+                </h1>
+            </a>
             <div class="grid grid-cols-2 gap-5">
                 <ProjectCard 
                     icon="vscode-icons:file-type-nuxt"
@@ -22,7 +30,7 @@
                     link="https://youkaidrawing.itch.io/scrapped"
                     description="Brackeys 2022.2 seven days long game-jam entry"
                     :tags="['GML', 'Game Jam', 'GameMaker Studio 2']"
-                    cover="../public/scrapped.gif"
+                    cover="../public/scrapped-2.gif"
                 />
                 <ProjectCard
                     icon="vscode-icons:file-type-vue"
@@ -30,7 +38,7 @@
                     date="March 2023"
                     title="Invoke"
                     link="https://invoke-seven.vercel.app/"
-                    description="Easily train your Invoker spell combination skills with"
+                    description="Easily train your Invoker spell combination skills"
                     :tags="['Vue', 'Typescript']"
                     cover="../public/invoke.png"
                 />
@@ -61,5 +69,6 @@
 
 <script setup lang="ts">
 import ProjectCard from '../components/ProjectCard.vue';
+import SpotifyPlayer from '../components/SpotifyPlayer.vue';
 import Welcome from '../components/Welcome.vue';
 </script>
