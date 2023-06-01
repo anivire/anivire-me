@@ -108,7 +108,8 @@ useSeoMeta({
     ogTitle: 'anivire',
     description: '2D artist and developer',
     ogDescription: '2D artist and developer',
-    ogImage: '../public/preview.png',
-    ogImageAlt: '../public/preview.png'
+    ogImage: '/images/preview.png',
+    ogImageAlt: '/images/preview.png',
+    ogImageUrl: '/images/preview.png'
 })
 </script>
