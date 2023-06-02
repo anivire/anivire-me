@@ -1,12 +1,12 @@
 <template>
-    <div class="flex flex-col items-center sm:px-3 lg:px-10 h-[90vh]">
-        <div class="flex flex-row w-full rounded-3xl relative justify-center grow">
-            <div class="flex flex-col sm:gap-1 lg:gap-5 justify-center items-center">
-                <h1 class="bg-ablack p-3 lg:p-5 px-6 mx-3 lg:px-16 rounded-full uppercase text-2xl lg:text-5xl text-awhite">hello, hallo, hiii, 👋, sup, yo!</h1>
-                <h1 class="p-5 uppercase sm:text-2xl lg:text-5xl text-ablack w-fit">i'm</h1>
+    <div class="lg:px-10 flex flex-col items-center h-screen">
+        <div class="flex flex-row w-full rounded-3xl relative justify-center grow mt-16">
+            <div class="flex flex-col gap-5 justify-center items-center">
+                <h1 class="lg:py-5 lg:px-16 lg:text-5xl md:py-3 md:px-10 md:text-3xl sm:py-2 sm:px-6 sm:text-2xl py-1 px-6 text-xl bg-ablack rounded-full uppercase text-awhite">hello, hallo, hiii, 👋, sup, yo!</h1>
+                <h1 class="lg:p-5 lg:text-5xl md:p-3 md:text-4xl sm:text-3xl text-2xl uppercase text-ablack w-fit">i'm</h1>
                 <h1 
                     :class="rotate > 0 ? 'rotate-1' : '-rotate-1' "
-                    class="uppercase sm:text-4xl lg:text-9xl text-awhite bg-ablack sm:py-1 lg:py-5 lg:pb-3 sm:px-6 lg:px-16 w-fit">{{randomizedUsername}}</h1>
+                    class="lg:text-9xl lg:py-5 lg:pb-3 lg:px-16 md:text-8xl md:py-4 md:pb-2 md:px-10 sm:text-6xl sm:py-3 sm:pb-2 sm:px-6 text-5xl py-2 pb-1 px-4 uppercase text-awhite bg-ablack w-fit">{{randomizedUsername}}</h1>
             </div>
         </div>
         <h1 class="flex flex-row gap-5 items-center my-3"><Icon name="ri:arrow-down-line" class="animate-bounce"/> Scroll down <Icon name="ri:arrow-down-line"  class="animate-bounce"/></h1>      

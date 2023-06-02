@@ -68,7 +68,7 @@
                     <Icon name="ri:arrow-right-up-line" class="text-4xl"/>
                 </h1>
             </a>
-            <div class="grid grid-cols-3 gap-5">
+            <div class="md:grid flex flex-col grid-cols-3 gap-5">
                 <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full col-span-2" width="1200"             format="png" src="/images/art/4.png"/>
                 <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full" width="600"                        format="png" src="/images/art/8.png"/>
                 <NuxtImg loading="lazy" class="object-cover rounded-3xl h-full max-h-96 w-full" width="600"                        format="png" src="/images/art/3.png"/>
@@ -109,7 +109,7 @@ useSeoMeta({
     description: '2D artist and developer',
     ogDescription: '2D artist and developer',
     ogImage: '/images/preview.png',
-    ogImageAlt: '/images/preview.png',
-    ogImageUrl: '/images/preview.png'
+    ogImageUrl: '/images/preview.png',
+    twitterCard: 'summary_large_image'
 })
 </script>
