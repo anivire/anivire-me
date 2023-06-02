@@ -8,7 +8,7 @@
                     <Icon name="ri:arrow-right-up-line" class="text-4xl"/>
                 </h1>
             </a>
-            <div class="grid grid-cols-2 gap-5">
+            <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-5">
                 <ProjectCard 
                     icon="vscode-icons:file-type-nuxt"
                     lang-name="Nuxt"
