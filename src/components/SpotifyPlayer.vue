@@ -1,5 +1,9 @@
 <template>
-    <div v-if="song && song.isPlaying" class="flex flex-row gap-3 w-96 h-28 bg-gradient-to-r from-ablack to-ablack/90 p-3 rounded-xl text-awhite">
+    <a 
+        v-if="song && song.isPlaying" 
+        target="_blank" 
+        :href="song.url" 
+        class="hover:scale-105 duration-200 transition ease-in-out flex flex-row gap-3 w-96 h-28 bg-gradient-to-r from-ablack to-ablack/90 p-3 rounded-xl text-awhite">
         <NuxtImg
             :src="song?.album.image"
             width="100"
@@ -8,14 +12,14 @@
         />
         <div class="flex flex-col justify-between w-full">
             <div class="flex flex-col">
-                <a 
-                    target="_blank" 
-                    :href="song.url" 
-                    class="text-lg font-bold line-clamp-1 items-center flex flex-row gap-1">
-                    {{ song.title }} 
-                    <Icon name="ri:arrow-right-up-line" class="text-xl w-5"/>
-                </a>
-                <p class="text-sm font-normal"><span v-for="artist, i in song.artists.name">
+                <div class="flex flex-row gap-1 items-center">
+                    <p 
+                        class="text-lg font-bold line-clamp-2 leading-5 items-center">
+                        {{ song.title }} 
+                    </p>
+                    <Icon name="ri:arrow-right-up-line" class="text-xl w-12"/>
+                </div>
+                <p class="text-sm font-normal line-clamp-1"><span v-for="artist, i in song.artists.name">
                     {{ (artist) + (song.artists.name.length != 1 && i + 1 != song.artists.name.length ? ', ' : '') }}
                 </span></p>
             </div>
@@ -26,7 +30,7 @@
                 />
             </div>
         </div>
-    </div>
+    </a>
     <div v-else class="flex flex-row gap-3 w-96 bg-gradient-to-r from-ablack to-ablack/90 p-3 rounded-xl text-awhite h-28 items-center justify-center">
         <p class="font-semibold text-sm"><Icon name="logos:spotify-icon" class="text-xl mr-1"/> Nothing playing yet...</p>
     </div>
