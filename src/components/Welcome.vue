@@ -2,7 +2,7 @@
     <div class="lg:px-10 flex flex-col items-center h-screen">
         <div class="flex flex-row w-full rounded-3xl relative justify-center grow mt-16">
             <div class="flex flex-col gap-5 justify-center items-center">
-                <h1 class="lg:py-5 lg:px-16 lg:text-5xl md:py-3 md:px-10 md:text-3xl sm:py-2 sm:px-6 sm:text-2xl py-1 px-6 text-xl bg-ablack rounded-full uppercase text-awhite">hello, hallo, hiii, 👋, sup, yo!</h1>
+                <h1 class="lg:py-5 lg:px-16 lg:text-5xl md:py-3 md:px-10 md:text-3xl sm:py-2 sm:px-6 sm:text-2xl py-1 px-6 text-base bg-ablack rounded-full uppercase text-awhite">hello, hallo, hiii, 👋, sup, yo!</h1>
                 <h1 class="lg:p-5 lg:text-5xl md:p-3 md:text-4xl sm:text-3xl text-2xl uppercase text-ablack w-fit">i'm</h1>
                 <h1 
                     :class="rotate > 0 ? 'rotate-1' : '-rotate-1' "

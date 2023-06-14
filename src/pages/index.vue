@@ -22,11 +22,11 @@
                 <ProjectCard
                     icon="vscode-icons:file-type-gamemaker2"
                     lang-name="GML"
-                    date="August 2022"
+                    date="Current"
                     title="Scrapped"
                     link="https://youkaidrawing.itch.io/scrapped"
-                    description="Brackeys 2022.2 seven days long game-jam entry"
-                    :tags="['GML', 'Game Jam', 'GameMaker Studio 2']"
+                    description="Barren desert, strange shadow creatures surround you, but do not despair, because robots will always help in a difficult situation! "
+                    :tags="['GML', 'GameMaker Studio 2']"
                     cover="/images/projects/scrapped.gif"
                 />
                 <ProjectCard
