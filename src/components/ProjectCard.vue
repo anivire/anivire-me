@@ -10,6 +10,7 @@
                 <p class="items-center flex flex-row gap-2"><Icon :name="icon" class="text-2xl"/> {{langName}}</p>
                 <div class="flex flex-row gap-2 items-center">
                     <div v-if="date == 'Current'" class="bg-green-500 w-2 h-2 rounded-full animate-pulse mt-0.5"/>
+                    <div v-else-if="date == 'Paused'" class="bg-amber-500 w-2 h-2 rounded-full mt-0.5"/>
                     <div v-else class="bg-rose-500 w-2 h-2 rounded-full mt-0.5"/>
                     <p>{{date}}</p>
                 </div>
@@ -21,7 +22,6 @@
             v-if="cover"
             :src="cover"
             width="600"
-            :class="cover == '../public/scrapped-2.gif' ? 'h-44' : ''"
             class="rounded-lg w-full object-cover"
         />
         <div class="flex flex-row flex-wrap gap-3">

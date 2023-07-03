@@ -12,7 +12,7 @@
                 <ProjectCard 
                     icon="vscode-icons:file-type-nuxt"
                     lang-name="Nuxt"
-                    date="Current"
+                    date="Paused"
                     title="avault"
                     link="https://avault.vercel.app/"
                     description="A web app where user can store all watched anime titles and keep track of new ongoing anime"
@@ -27,7 +27,7 @@
                     link="https://youkaidrawing.itch.io/scrapped"
                     description="Barren desert, strange shadow creatures surround you, but do not despair, because robots will always help in a difficult situation! "
                     :tags="['GML', 'GameMaker Studio 2']"
-                    cover="/images/projects/scrapped.gif"
+                    cover="/images/projects/scrapped-1.gif"
                 />
                 <ProjectCard
                     icon="vscode-icons:file-type-vue"
