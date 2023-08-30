@@ -12,7 +12,7 @@
                 <ProjectCard 
                     icon="vscode-icons:file-type-nuxt"
                     lang-name="Nuxt"
-                    date="Paused"
+                    date="Current"
                     title="avault"
                     link="https://avault.vercel.app/"
                     description="A web app where user can store all watched anime titles and keep track of new ongoing anime"

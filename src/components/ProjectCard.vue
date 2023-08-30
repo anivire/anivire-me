@@ -4,19 +4,19 @@
         :href="link"
         ref="target"
         :style="{ transform: cardTransform, transition: 'all 0.25s ease-out' }"
-        class="bg-gradient-to-r from-ablack to-ablack/90 text-awhite rounded-3xl p-8 flex flex-col justify-between gap-5">
+        class="bg-gradient-to-r from-ablack to-ablack/90 text-awhite rounded-3xl md:p-8 p-6 flex flex-col justify-between md:gap-5 gap-3">
         <div class="flex flex-col gap-2">
             <div class="flex flex-row justify-between font-semibold">
-                <p class="items-center flex flex-row gap-2"><Icon :name="icon" class="text-2xl"/> {{langName}}</p>
+                <p class="items-center flex flex-row gap-2"><Icon :name="icon" class="md:text-2xl text-xl"/> {{langName}}</p>
                 <div class="flex flex-row gap-2 items-center">
                     <div v-if="date == 'Current'" class="bg-green-500 w-2 h-2 rounded-full animate-pulse mt-0.5"/>
                     <div v-else-if="date == 'Paused'" class="bg-amber-500 w-2 h-2 rounded-full mt-0.5"/>
                     <div v-else class="bg-rose-500 w-2 h-2 rounded-full mt-0.5"/>
-                    <p>{{date}}</p>
+                    <p class="md:text-base text-sm">{{date}}</p>
                 </div>
             </div>
-            <h1 class="flex flex-row gap-2 items-center md:text-3xl text-2xl -mb-1">{{title}} <Icon name="ri:arrow-right-up-line"/></h1>
-            <p class="font-semibold">{{description}}</p>
+            <h1 class="flex flex-row gap-2 items-center md:text-3xl text-xl -mb-1">{{title}} <Icon name="ri:arrow-right-up-line"/></h1>
+            <p class="md:text-base text-sm font-semibold">{{description}}</p>
         </div>
         <NuxtImg 
             v-if="cover"
@@ -24,7 +24,7 @@
             width="600"
             class="rounded-lg w-full object-cover"
         />
-        <div class="flex flex-row flex-wrap gap-3">
+        <div class="flex flex-row flex-wrap md:gap-3 gap-2">
             <p 
                 v-for="tag in tags"
                 class="p-0.5 px-3 rounded-full bg-awhite text-ablack font-bold text-sm">
