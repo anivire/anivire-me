@@ -9,6 +9,8 @@
     url('assets/Hubot-Sans.woff2') format('woff2-variations');
   font-weight: 200 900;
   font-stretch: 75% 200%;
+  rel: 'preload';
+  display: auto;
 }
 
 @layer base {
