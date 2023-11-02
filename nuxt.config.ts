@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 export default defineNuxtConfig({
     runtimeConfig: {
         public: {
