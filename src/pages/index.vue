@@ -70,7 +70,7 @@ const projectsData = ref([
         link: '#',
         description: 'Home page with Twitch-bot for russian streamer Tijoe.',
         tags: ['React', 'Next', 'Typescript', 'Supabase', 'Twitch API'],
-        cover: 'tijoe.png'
+        cover: 'tijoe.webp'
     },{
         id: 1,
         icon: 'vscode-icons:file-type-nuxt',
@@ -80,9 +80,19 @@ const projectsData = ref([
         link: 'https://avault.vercel.app/',
         description: 'Web app where you can create lists, store and track anime titles.',
         tags: ['Vue', 'Nuxt', 'Typescript', 'Jikan', 'Supabase'],
-        cover: 'avault.png'
+        cover: 'avault.webp'
     }, {
         id: 2,
+        icon: 'vscode-icons:file-type-nuxt',
+        langName: 'Nuxt',
+        date: 'Current',
+        title: 'Personal web page',
+        link: 'https://github.com/anivire/anivire-me',
+        description: 'My web dev & art portfolio.',
+        tags: ['Vue', 'Nuxt', 'Typescript', 'Spotify API'],
+        cover: 'me.webp'
+    }, {
+        id: 3,
         icon: 'vscode-icons:file-type-gamemaker2',
         langName: 'GML',
         date: 'Current',
@@ -90,9 +100,9 @@ const projectsData = ref([
         link: 'https://youkaidrawing.itch.io/scrapped/',
         description: 'Arena-shooter game with rogue-like elements.',
         tags: ['GML', 'GameMaker Studio 2'],
-        cover: 'scrapped.png'
+        cover: 'scrapped.webp'
     }, {
-        id: 3,
+        id: 4,
         icon: 'vscode-icons:file-type-vue',
         langName: 'Vue',
         date: 'March 2023',
@@ -100,9 +110,9 @@ const projectsData = ref([
         link: 'https://invoke-seven.vercel.app/',
         description: 'Web app where you can easily train Invoker spell combination skills.',
         tags: ['Vue', 'Typescript'],
-        cover: 'invoke.png'
+        cover: 'invoke.webp'
     }, {
-        id: 4,
+        id: 5,
         icon: 'vscode-icons:file-type-vue',
         langName: 'Vue',
         date: 'March 2023',
@@ -110,9 +120,9 @@ const projectsData = ref([
         link: 'https://avault.vercel.app/',
         description: 'Web app for generating avatars with random pattern.',
         tags: ['Vue', 'Typescript'],
-        cover: 'avatar.png'
+        cover: 'avatar.webp'
     }, {
-        id: 5,
+        id: 6,
         icon: 'devicon:csharp',
         langName: 'C#',
         date: 'May 2021',
@@ -120,7 +130,7 @@ const projectsData = ref([
         link: 'https://github.com/anivire/ArtistPalace',
         description: 'Small project aimed at compiling a constantly updated list of artists from all over the world.',
         tags: ['ASP.Net Core', 'C#', 'HTML', 'CSS'],
-        cover: 'artist-palace.png'
+        cover: 'artist-palace.webp'
     },
 ])
 
@@ -128,39 +138,39 @@ const artsData = ref([
     {
         id: 0,
         size: 'col-span-2',
-        src: '4.png',
+        src: '4.webp',
     }, {
         id: 1,
         size: 'col-span-1',
-        src: '8.png',
+        src: '8.webp',
     }, {
         id: 2,
         size: 'col-span-1',
-        src: '3.png',
+        src: '3.webp',
     }, {
         id: 3,
         size: 'col-span-1',
-        src: '5.png',
+        src: '5.webp',
     }, {
         id: 4,
         size: 'col-span-1',
-        src: '1.png',
+        src: '1.webp',
     }, {
         id: 5,
         size: 'col-span-1',
-        src: '6.png',
+        src: '6.webp',
     }, {
         id: 6,
         size: 'col-span-2',
-        src: '7.png',
+        src: '7.webp',
     }, {
         id: 7,
         size: 'col-span-2',
-        src: '9.png',
+        src: '9.webp',
     }, {
         id: 8,
         size: 'col-span-1',
-        src: '2.png',
+        src: '2.webp',
     }
 ])
 
