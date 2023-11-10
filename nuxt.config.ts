@@ -14,6 +14,9 @@ export default defineNuxtConfig({
             autoprefixer: {},
         },
     },
+    plugins: [
+        { src: '~/plugins/aos/aos.client.ts', mode: 'client' },
+    ],
     dir: {
         layouts: 'src/layouts',
         pages: 'src/pages',
