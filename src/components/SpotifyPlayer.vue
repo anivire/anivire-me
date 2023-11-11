@@ -34,8 +34,8 @@
         </a>
     </article>
 
-    <article v-else class="flex flex-row gap-3 md:w-96 w-80 h-28 bg-gradient-to-r from-ablack to-ablack/90 p-3 rounded-xl text-awhite items-center justify-center">
-        <p class="font-semibold text-sm"><Icon name="logos:spotify-icon" class="text-xl mr-1"/> Nothing playing yet...</p>
+    <article v-else class="flex flex-row gap-3 md:w-96 w-80 h-28 bg-gradient-to-r from-ablack to-ablack/90 p-3 rounded-xl text-awhite justify-center">
+        <p class="text-sm flex flex-row items-center gap-1"><Icon name="logos:spotify-icon" class="text-xl mr-1"/> Nothing playing yet...</p>
     </article>
 </template>
 

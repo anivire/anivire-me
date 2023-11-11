@@ -8,9 +8,9 @@
             </svg>
         </div>
         <nav class="agent-2 md:gap-10 gap-3 flex flex-row justify-between">
-            <h1 @click="moveTo('projects')" class="uppercase md:text-sm text-xs text-ablack cursor-pointer hover:bg-ablack hover:text-awhite p-1">projects</h1>
-            <h1 @click="moveTo('art')"      class="uppercase md:text-sm text-xs text-ablack cursor-pointer hover:bg-ablack hover:text-awhite p-1">art</h1>
-            <h1 @click="moveTo('about')"    class="uppercase md:text-sm text-xs text-ablack cursor-pointer hover:bg-ablack hover:text-awhite p-1">contact</h1>
+            <h1 @click="moveTo('projects')" class="uppercase md:text-sm text-xs text-ablack cursor-pointer hover:bg-ablack hover:text-awhite p-1 font-hubot">projects</h1>
+            <h1 @click="moveTo('art')"      class="uppercase md:text-sm text-xs text-ablack cursor-pointer hover:bg-ablack hover:text-awhite p-1 font-hubot">art</h1>
+            <h1 @click="moveTo('about')"    class="uppercase md:text-sm text-xs text-ablack cursor-pointer hover:bg-ablack hover:text-awhite p-1 font-hubot">contact</h1>
         </nav>
     </header>
 </template>

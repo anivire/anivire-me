@@ -15,19 +15,38 @@ export default defineNuxtConfig({
         },
     },
     plugins: [
-        { src: '~/plugins/aos/aos.client.ts', mode: 'client' },
+        {
+            src: '~/plugins/aos/aos.client.ts',
+            mode: 'client'
+        },
     ],
     dir: {
         layouts: 'src/layouts',
         pages: 'src/pages',
     },
     modules: [
-        'nuxt-icon',
         '@nuxt/image-edge',
-        '@vueuse/nuxt'
+        '@vueuse/nuxt',
+        '@nuxtjs/google-fonts',
+        'nuxt-icon',
+        'nuxt-font-loader'
     ],
+    googleFonts: {
+        families: {
+            Inter: true
+        }
+    },
+    fontLoader: {
+        local: [
+            {
+                src: '@/assets/Hubot-Sans.woff2',
+                family: 'Hubot Sans',
+                class: 'font-hubot',
+            }
+        ]
+    },
     css: [
       '@/assets/index.css',
     ],
     ssr: true
-})
+});

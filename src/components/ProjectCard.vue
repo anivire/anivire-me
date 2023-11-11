@@ -16,8 +16,8 @@
                         <p class="md:text-base text-sm">{{date}}</p>
                     </div>
                 </section>
-                <h1 class="flex flex-row gap-2 items-center md:text-3xl text-xl -mb-1">{{title}} <Icon name="ri:arrow-right-up-line"/></h1>
-                <p class="md:text-base text-sm font-semibold">{{description}}</p>
+                <h1 class="flex flex-row gap-2 items-center md:text-3xl text-xl -mb-1 font-hubot">{{title}} <Icon name="ri:arrow-right-up-line"/></h1>
+                <p class="md:text-base text-sm">{{description}}</p>
             </section>
 
             <NuxtImg 

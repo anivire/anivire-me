@@ -20,10 +20,11 @@
 
 :root {
     background-color: var(--color-a-white);
+    font-family: 'Inter';
 }
 
 h1 {
-    font-family: 'Hubot Sans';
+    font-family: 'Hubot';
     font-weight: 900;
     font-stretch: 125%;
     line-height: 3rem;

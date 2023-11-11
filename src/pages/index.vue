@@ -4,7 +4,7 @@
         
         <section id="projects" class="flex flex-col gap-5 px-10">
             <a data-aos="fade-up" target="_blank" href="https://github.com/anivire">
-                <h1 class="text-2xl flex flex-row justify-between items-center cursor-pointer">Projects<Icon name="ri:arrow-right-up-line" class="text-4xl"/></h1>
+                <h1 class="text-2xl flex flex-row justify-between items-center cursor-pointer font-hubot">Projects<Icon name="ri:arrow-right-up-line" class="text-4xl"/></h1>
             </a>
             <section class="grid sm:grid-cols-1 lg:grid-cols-2 gap-5">
                 <ProjectCard v-for="project in projectsData"
@@ -24,7 +24,7 @@
 
         <section id="art" class="flex flex-col gap-5 px-10">
             <a  data-aos="fade-up" target="_blank" href="https://www.behance.net/anivire">
-                <h1 class="text-2xl flex flex-row justify-between items-center cursor-pointer">Art<Icon name="ri:arrow-right-up-line" class="text-4xl"/></h1>
+                <h1 class="text-2xl flex flex-row justify-between items-center cursor-pointer font-hubot">Art<Icon name="ri:arrow-right-up-line" class="text-4xl"/></h1>
             </a>
             <section class="md:grid flex flex-col grid-cols-3 gap-5">
                 <NuxtImg
@@ -43,15 +43,15 @@
         <section id="about" class="flex flex-col gap-5 px-10 mb-24">
             <section class="flex flex-col items-center justify-between gap-5">
                 <nav class="flex flex-row gap-5 text-ablack text-4xl">
-                    <a data-aos="fade-in" data-aos-delay="100" target="_blank" href="mailto:anivire.work@gmail.com"><Icon class="hover:scale-125 cursor-pointer transition duration-200 ease-in-out" name="mdi:gmail"/></a>
-                    <a data-aos="fade-in" data-aos-delay="300" target="_blank" href="https://discordapp.com/users/207839349209956352"><Icon class="hover:scale-125 cursor-pointer transition duration-200 ease-in-out" name="ic:baseline-discord"/></a>
-                    <a data-aos="fade-in" data-aos-delay="500" target="_blank" href="https://github.com/anivire"><Icon class="hover:scale-125 cursor-pointer transition duration-200 ease-in-out" name="skill-icons:github-light"/></a>
-                    <a data-aos="fade-in" data-aos-delay="700" target="_blank" href="https://twitter.com/aniv1re"><Icon class="hover:scale-125 cursor-pointer transition duration-200 ease-in-out" name="mdi:twitter"/></a>
-                    <a data-aos="fade-in" data-aos-delay="900" target="_blank" href="https://www.youtube.com/channel/UCNYYZJ49nb9058Z8NM6OE7A"><Icon class="hover:scale-125 cursor-pointer transition duration-200 ease-in-out" name="mdi:youtube"/></a>
-                    <a data-aos="fade-in" data-aos-delay="1000" target="_blank" href="https://www.behance.net/anivire"><Icon class="hover:scale-125 cursor-pointer transition duration-200 ease-in-out" name="mdi:behance"/></a>
+                    <a target="_blank" href="mailto:anivire.work@gmail.com"><Icon class="hover:scale-125 cursor-pointer transition duration-200 ease-in-out" name="mdi:gmail"/></a>
+                    <a target="_blank" href="https://discordapp.com/users/207839349209956352"><Icon class="hover:scale-125 cursor-pointer transition duration-200 ease-in-out" name="ic:baseline-discord"/></a>
+                    <a target="_blank" href="https://github.com/anivire"><Icon class="hover:scale-125 cursor-pointer transition duration-200 ease-in-out" name="skill-icons:github-light"/></a>
+                    <a target="_blank" href="https://twitter.com/aniv1re"><Icon class="hover:scale-125 cursor-pointer transition duration-200 ease-in-out" name="mdi:twitter"/></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCNYYZJ49nb9058Z8NM6OE7A"><Icon class="hover:scale-125 cursor-pointer transition duration-200 ease-in-out" name="mdi:youtube"/></a>
+                    <a target="_blank" href="https://www.behance.net/anivire"><Icon class="hover:scale-125 cursor-pointer transition duration-200 ease-in-out" name="mdi:behance"/></a>
                 </nav>
-                <SpotifyPlayer data-aos="fade-up" data-aos-delay="1200"/>
-                <h1 data-aos="zoom-in" data-aos-delay="2000" class="text-2xl flex flex-row justify-center">❤</h1>
+                <SpotifyPlayer />
+                <h1 class="text-2xl flex flex-row justify-center font-hubot">❤</h1>
             </section>
         </section>
     </article>
