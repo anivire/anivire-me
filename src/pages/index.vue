@@ -119,7 +119,7 @@ const projectsData = ref([
         langName: 'Vue',
         date: 'March 2023',
         title: 'Avatar generator',
-        link: 'https://avault.vercel.app/',
+        link: 'https://svg-avatar-generator.vercel.app/',
         description: 'Web app for generating avatars with random pattern.',
         tags: ['Vue', 'Typescript'],
         cover: 'avatar.webp'

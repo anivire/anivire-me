@@ -15,7 +15,7 @@
                     <div class="flex flex-row gap-1 items-center">
                         <p 
                             class="md:text-lg text-sm font-bold line-clamp-1 items-center">
-                            {{ song.title }} 
+                            {{ song.title }}
                         </p>
                         <Icon name="ri:arrow-right-up-line" class="text-xl w-12"/>
                     </div>
@@ -40,7 +40,9 @@
 </template>
 
 <script setup lang="ts">
-const { data: song, refresh} = useAsyncData('nowPlaying', () => $fetch('/api/v1/spotify/nowPlaying', { method: 'GET' }));
+import {TSong} from "@/src/types/TSong";
+
+const { data: song, refresh} = useAsyncData<TSong>('nowPlaying', () => $fetch('/api/v1/spotify/nowPlaying', { method: 'GET' }));
 
 setInterval(() => {
     refresh();
