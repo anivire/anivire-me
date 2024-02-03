@@ -47,4 +47,4 @@ const { data: song, refresh} = useAsyncData<Song>('nowPlaying', () => $fetch('/a
 setInterval(() => {
     refresh();
 }, 3000);
-</script>@/src/types/Song
+</script>
