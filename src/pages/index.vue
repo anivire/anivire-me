@@ -67,11 +67,11 @@ const projectsData = ref([
         id: 0,
         icon: 'vscode-icons:file-type-next',
         langName: 'Next',
-        date: 'Unannounced',
+        date: 'Current',
         title: 'Tijoe',
-        link: '#',
+        link: 'https://tijoe.net/',
         description: 'Home page with Twitch-bot for russian streamer Tijoe.',
-        tags: ['React', 'Next', 'Typescript', 'Supabase', 'Twitch API'],
+        tags: ['Next', 'Typescript', 'Supabase', 'Twitch API', 'Prismic'],
         cover: 'tijoe.webp'
     },{
         id: 1,
@@ -81,7 +81,7 @@ const projectsData = ref([
         title: 'avault',
         link: 'https://avault.vercel.app/',
         description: 'Web app where you can create lists, store and track anime titles.',
-        tags: ['Vue', 'Nuxt', 'Typescript', 'Jikan', 'Supabase'],
+        tags: ['Nuxt', 'Typescript', 'Jikan', 'Supabase'],
         cover: 'avault.webp'
     }, {
         id: 2,
@@ -91,7 +91,7 @@ const projectsData = ref([
         title: 'Personal web page',
         link: 'https://github.com/anivire/anivire-me',
         description: 'My web dev & art portfolio.',
-        tags: ['Vue', 'Nuxt', 'Typescript', 'Spotify API'],
+        tags: ['Nuxt', 'Typescript', 'Spotify API'],
         cover: 'me.webp'
     }, {
         id: 3,
@@ -123,18 +123,20 @@ const projectsData = ref([
         description: 'Web app for generating avatars with random pattern.',
         tags: ['Vue', 'Typescript'],
         cover: 'avatar.webp'
-    }, {
-        id: 6,
-        icon: 'devicon:csharp',
-        langName: 'C#',
-        date: 'May 2021',
-        title: 'ArtistPalace',
-        link: 'https://github.com/anivire/ArtistPalace',
-        description: 'Small project aimed at compiling a constantly updated list of artists from all over the world.',
-        tags: ['ASP.Net Core', 'C#', 'HTML', 'CSS'],
-        cover: 'artist-palace.webp'
-    },
+    }
 ])
+
+// {
+//         id: 6,
+//         icon: 'devicon:csharp',
+//         langName: 'C#',
+//         date: 'May 2021',
+//         title: 'ArtistPalace',
+//         link: 'https://github.com/anivire/ArtistPalace',
+//         description: 'Small project aimed at compiling a constantly updated list of artists from all over the world.',
+//         tags: ['ASP.Net Core', 'C#', 'HTML', 'CSS'],
+//         cover: 'artist-palace.webp'
+//     },
 
 const artsData = ref([
     {

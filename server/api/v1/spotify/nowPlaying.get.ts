@@ -1,5 +1,5 @@
 import { SpotifyService } from 'spotify-now-playing'
-import {TSong} from "@/src/types/TSong";
+import {TSong} from "@/src/types/Song";
 const runtimeConfig = useRuntimeConfig();
 
 export default defineEventHandler(async (event) => {

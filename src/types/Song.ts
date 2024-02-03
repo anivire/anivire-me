@@ -1,4 +1,4 @@
-export type TSong = {
+export interface Song {
     progress: number,
     album: {
         name: string,

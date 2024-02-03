@@ -40,11 +40,11 @@
 </template>
 
 <script setup lang="ts">
-import {TSong} from "@/src/types/TSong";
+import type { Song } from "@/src/types/Song";
 
-const { data: song, refresh} = useAsyncData<TSong>('nowPlaying', () => $fetch('/api/v1/spotify/nowPlaying', { method: 'GET' }));
+const { data: song, refresh} = useAsyncData<Song>('nowPlaying', () => $fetch('/api/v1/spotify/nowPlaying', { method: 'GET' }));
 
 setInterval(() => {
     refresh();
 }, 3000);
-</script>
+</script>@/src/types/Song
