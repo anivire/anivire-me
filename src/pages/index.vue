@@ -103,8 +103,18 @@ const projectsData = ref([
         description: 'Arena-shooter game with rogue-like elements.',
         tags: ['GML', 'GameMaker Studio 2'],
         cover: 'scrapped.webp'
-    }, {
+    },{
         id: 4,
+        icon: 'vscode-icons:file-type-typescript-official',
+        langName: 'Typescript',
+        date: 'Current',
+        title: 'Twitch Embed TS wrapper',
+        link: 'https://github.com/anivire/twitch-embed-ts',
+        description: 'Twitch Embed API Typescript wrapper.',
+        tags: ['Typescript'],
+        cover: 'twitch-api-ts-wrapper.webp'
+    }, {
+        id: 5,
         icon: 'vscode-icons:file-type-vue',
         langName: 'Vue',
         date: 'March 2023',
@@ -114,7 +124,7 @@ const projectsData = ref([
         tags: ['Vue', 'Typescript'],
         cover: 'invoke.webp'
     }, {
-        id: 5,
+        id: 6,
         icon: 'vscode-icons:file-type-vue',
         langName: 'Vue',
         date: 'March 2023',
@@ -125,18 +135,6 @@ const projectsData = ref([
         cover: 'avatar.webp'
     }
 ])
-
-// {
-//         id: 6,
-//         icon: 'devicon:csharp',
-//         langName: 'C#',
-//         date: 'May 2021',
-//         title: 'ArtistPalace',
-//         link: 'https://github.com/anivire/ArtistPalace',
-//         description: 'Small project aimed at compiling a constantly updated list of artists from all over the world.',
-//         tags: ['ASP.Net Core', 'C#', 'HTML', 'CSS'],
-//         cover: 'artist-palace.webp'
-//     },
 
 const artsData = ref([
     {
