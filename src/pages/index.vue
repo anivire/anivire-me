@@ -102,7 +102,7 @@ const projectsData = ref([
         link: 'https://youkaidrawing.itch.io/scrapped/',
         description: 'Arena-shooter game with rogue-like elements.',
         tags: ['GML', 'GameMaker Studio 2'],
-        cover: 'scrapped.webp'
+        cover: 'scrapped-1.gif'
     },{
         id: 4,
         icon: 'vscode-icons:file-type-typescript-official',
