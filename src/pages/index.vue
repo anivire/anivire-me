@@ -73,17 +73,21 @@ const projectsData = ref([
         description: 'Home page with Twitch-bot for russian streamer Tijoe.',
         tags: ['Next', 'Typescript', 'Supabase', 'Twitch API', 'Prismic'],
         cover: 'tijoe.webp'
-    },{
-        id: 1,
-        icon: 'vscode-icons:file-type-nuxt',
-        langName: 'Nuxt',
-        date: 'Current',
-        title: 'avault',
-        link: 'https://avault.vercel.app/',
-        description: 'Web app where you can create lists, store and track anime titles.',
-        tags: ['Nuxt', 'Typescript', 'Jikan', 'Supabase'],
-        cover: 'avault.webp'
-    }, {
+    },
+    
+    // {
+    //     id: 1,
+    //     icon: 'vscode-icons:file-type-nuxt',
+    //     langName: 'Nuxt',
+    //     date: 'Current',
+    //     title: 'avault',
+    //     link: 'https://avault.vercel.app/',
+    //     description: 'Web app where you can create lists, store and track anime titles.',
+    //     tags: ['Nuxt', 'Typescript', 'Jikan', 'Supabase'],
+    //     cover: 'avault.webp'
+    // },
+    
+     {
         id: 2,
         icon: 'vscode-icons:file-type-nuxt',
         langName: 'Nuxt',
