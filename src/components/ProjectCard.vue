@@ -26,7 +26,7 @@
                 alt="Cover image"
                 loading="lazy"
                 width="600"
-                class="rounded-lg w-full object-cover"
+                class="rounded-lg w-full object-cover max-h-40"
             />
 
             <section class="flex flex-row flex-wrap md:gap-3 gap-2">
