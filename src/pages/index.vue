@@ -182,10 +182,10 @@ const artsData = ref([
 useSeoMeta({
     title: 'anivire',
     ogTitle: 'anivire',
-    description: '2D artist and developer',
-    ogDescription: '2D artist and developer',
+    description: "HELLO, HALLO, HIII, 👋, SUP, YO! I'm self-taught web/game developer and 2D digital artist.",
+    ogDescription: "HELLO, HALLO, HIII, 👋, SUP, YO! I'm self-taught web/game developer and 2D digital artist.",
     ogImage: '/images/preview.png',
     ogImageUrl: '/images/preview.png',
     twitterCard: 'summary_large_image'
-})
+});
 </script>

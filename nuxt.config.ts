@@ -32,7 +32,7 @@ export default defineNuxtConfig({
         'nuxt-font-loader',
         'nuxt-gtag',
         '@nuxtjs/robots',
-        '@nuxtjs/sitemap'
+        '@nuxtjs/sitemap',
     ],
     googleFonts: {
         families: {
@@ -47,6 +47,19 @@ export default defineNuxtConfig({
                 class: 'font-hubot',
             }
         ]
+    },
+    robots: {
+        rules: [
+            { Comment: '*' },
+            { UserAgent: '*' },
+            { Allow: '/' },
+            { BlankLine: true },
+            { Comment: 'Host' },
+            { Host: process.env.CANONICAL_URL },
+            { BlankLine: true },
+            { Comment: 'Sitemaps' },
+            { Sitemap: `https://${process.env.CANONICAL_URL}/sitemap.xml` },
+        ],
     },
     gtag: {
         id: process.env.GOOGLE_TAG || "G-XXXXXXXXXX"
