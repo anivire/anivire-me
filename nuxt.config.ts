@@ -29,7 +29,8 @@ export default defineNuxtConfig({
         '@vueuse/nuxt',
         '@nuxtjs/google-fonts',
         'nuxt-icon',
-        'nuxt-font-loader'
+        'nuxt-font-loader',
+        'nuxt-gtag'
     ],
     googleFonts: {
         families: {
@@ -44,6 +45,9 @@ export default defineNuxtConfig({
                 class: 'font-hubot',
             }
         ]
+    },
+    gtag: {
+        id: process.env.GOOGLE_TAG || "G-XXXXXXXXXX"
     },
     css: [
       '@/assets/index.css',
