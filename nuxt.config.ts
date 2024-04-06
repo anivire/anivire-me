@@ -30,7 +30,9 @@ export default defineNuxtConfig({
         '@nuxtjs/google-fonts',
         'nuxt-icon',
         'nuxt-font-loader',
-        'nuxt-gtag'
+        'nuxt-gtag',
+        '@nuxtjs/robots',
+        '@nuxtjs/sitemap'
     ],
     googleFonts: {
         families: {
