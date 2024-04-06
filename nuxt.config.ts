@@ -1,3 +1,5 @@
+import { title } from "process";
+
 require('dotenv').config()
 
 export default defineNuxtConfig({
@@ -29,24 +31,22 @@ export default defineNuxtConfig({
         '@vueuse/nuxt',
         '@nuxtjs/google-fonts',
         'nuxt-icon',
-        'nuxt-font-loader',
+        '@nuxt/fonts',
         'nuxt-gtag',
         '@nuxtjs/robots',
-        '@nuxtjs/sitemap',
+        ['@nuxtjs/sitemap', { autoLastmod: true }]
     ],
     googleFonts: {
         families: {
             Inter: true
         }
     },
-    fontLoader: {
-        local: [
-            {
-                src: '@/assets/Hubot-Sans.woff2',
-                family: 'Hubot Sans',
-                class: 'font-hubot',
-            }
-        ]
+    fonts: {
+        // You can provide overrides for individual families
+        families: [
+            { name: 'Hubot Sans', provider: 'local' }
+        ],
+        priority: 'local'
     },
     robots: {
         rules: [
@@ -67,5 +67,20 @@ export default defineNuxtConfig({
     css: [
       '@/assets/index.css',
     ],
+    site: {
+        url: process.env.CANONICAL_URL,
+        name: 'anivire',
+    },
+    sitemap: {
+        xslColumns: [
+            { label: 'URL', width: '50%' },
+            { label: 'Last Modified', select: 'sitemap:lastmod', width: '25%' },
+            { label: 'Priority', select: 'sitemap:priority', width: '12.5%' },
+            { label: 'Change Frequency', select: 'sitemap:changefreq', width: '12.5%' },
+        ],
+    },
+    routeRules: {
+        '/': { sitemap: { changefreq: 'monthly', priority: 0.7 } },
+    },
     ssr: true
 });

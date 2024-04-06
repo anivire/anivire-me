@@ -7,16 +7,4 @@
 
 <script setup lang="ts">
 import TopNavigation from '../components/navigation/TopNavigation.vue';
-
-useHead({
-  link: [
-    {
-      rel: 'preload',
-      as: 'font',
-      type: 'font/woff2',
-      crossorigin: 'anonymous',
-      href: '@/assets/Hubot-Sans.woff2'
-    }
-  ],
-});
 </script>
