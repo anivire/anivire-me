@@ -93,7 +93,7 @@ const projectsData = ref([
         date: 'Current',
         title: 'Scrapped',
         link: 'https://youkaidrawing.itch.io/scrapped/',
-        description: 'Small arena-shooter game which started from Jam and recieve a few smol post-jam patches.',
+        description: 'Small arena-shooter game which started from game-jam and recieved few smol post-jam patches.',
         tags: ['GML', 'GameMaker Studio 2'],
         cover: 'scrapped-1.gif'
     },{
