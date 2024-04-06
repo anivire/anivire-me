@@ -85,6 +85,7 @@ const projectsData = ref([
     //     tags: ['Nuxt', 'Typescript', 'Jikan', 'Supabase'],
     //     cover: 'avault.webp'
     // },
+    
     {
         id: 2,
         icon: 'vscode-icons:file-type-gamemaker2',
