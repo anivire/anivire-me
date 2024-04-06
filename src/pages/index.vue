@@ -69,7 +69,7 @@ const projectsData = ref([
         date: 'Current',
         title: 'Tijoe',
         link: 'https://tijoe.net/',
-        description: 'Home page with Twitch-bot for russian streamer Tijoe.',
+        description: 'Home website with game-reviews, Twitch watch time leaderboards and self-hosted Twitch bot for russian streamer Tijoe.',
         tags: ['Next', 'Typescript', 'Supabase', 'Twitch API', 'Prismic'],
         cover: 'tijoe.webp'
     },
@@ -85,27 +85,26 @@ const projectsData = ref([
     //     tags: ['Nuxt', 'Typescript', 'Jikan', 'Supabase'],
     //     cover: 'avault.webp'
     // },
-    
-     {
+    {
         id: 2,
-        icon: 'vscode-icons:file-type-nuxt',
-        langName: 'Nuxt',
-        date: 'Current',
-        title: 'Personal web page',
-        link: 'https://github.com/anivire/anivire-me',
-        description: 'My web dev & art portfolio.',
-        tags: ['Nuxt', 'Typescript', 'Spotify API'],
-        cover: 'me.webp'
-    }, {
-        id: 3,
         icon: 'vscode-icons:file-type-gamemaker2',
         langName: 'GML',
         date: 'Current',
         title: 'Scrapped',
         link: 'https://youkaidrawing.itch.io/scrapped/',
-        description: 'Arena-shooter game with rogue-like elements.',
+        description: 'Small arena-shooter game which started from Jam and recieve a few smol post-jam patches.',
         tags: ['GML', 'GameMaker Studio 2'],
         cover: 'scrapped-1.gif'
+    },{
+        id: 3,
+        icon: 'vscode-icons:file-type-nuxt',
+        langName: 'Nuxt',
+        date: 'Current',
+        title: 'Portfolio',
+        link: 'https://github.com/anivire/anivire-me',
+        description: 'My open source web/game-dev and art portfolio.',
+        tags: ['Nuxt', 'Typescript', 'Spotify API'],
+        cover: 'me.webp'
     },{
         id: 4,
         icon: 'vscode-icons:file-type-typescript-official',
@@ -113,7 +112,7 @@ const projectsData = ref([
         date: 'Current',
         title: 'Twitch Embed TS wrapper',
         link: 'https://github.com/anivire/twitch-embed-ts',
-        description: 'Twitch Embed API Typescript wrapper.',
+        description: 'Small Twitch Embed API Typescript wrapper.',
         tags: ['Typescript'],
         cover: 'twitch-api-ts-wrapper.webp'
     }, {

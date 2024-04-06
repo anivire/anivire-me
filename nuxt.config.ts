@@ -42,9 +42,8 @@ export default defineNuxtConfig({
         }
     },
     fonts: {
-        // You can provide overrides for individual families
         families: [
-            { name: 'Hubot Sans', provider: 'local' }
+            { name: 'Hubot Sans Black', provider: 'local' }
         ],
         priority: 'local'
     },

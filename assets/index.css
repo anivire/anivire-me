@@ -16,8 +16,7 @@
 }
 
 h1 {
-    font-family: 'Hubot Sans';
     font-weight: 900;
-    font-stretch: 125%;
+    font-stretch: wider;
     line-height: 3rem;
 }
