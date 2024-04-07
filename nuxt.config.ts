@@ -1,5 +1,3 @@
-import { title } from "process";
-
 require('dotenv').config()
 
 export default defineNuxtConfig({

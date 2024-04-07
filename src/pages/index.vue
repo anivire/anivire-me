@@ -1,6 +1,6 @@
 <template>
     <article class="flex flex-col gap-24">
-        <Welcome />
+        <Welcome/>
         
         <section id="projects" class="flex flex-col gap-5 px-10">
             <a target="_blank" href="https://github.com/anivire">
