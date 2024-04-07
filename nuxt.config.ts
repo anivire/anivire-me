@@ -29,40 +29,36 @@ export default defineNuxtConfig({
     modules: [
         '@nuxt/image-edge',
         '@vueuse/nuxt',
-        '@nuxtjs/google-fonts',
         'nuxt-icon',
-        '@nuxt/fonts',
-        'nuxt-gtag',
-        '@nuxtjs/robots',
+        ['@nuxtjs/google-fonts', {
+            families: {
+                Inter: true
+            }
+        }],
+        ['@nuxt/fonts', {
+            families: [
+                { name: 'Hubot Sans', src: "/Hubot-Sans.woff2", provider: 'local', weight: 'black' }
+            ],
+            priority: 'local',
+        }],
+        ['nuxt-gtag', {
+            id: process.env.GOOGLE_TAG || "G-XXXXXXXXXX",
+        }],
+        ['@nuxtjs/robots', {
+            rules: [
+                { Comment: '*' },
+                { UserAgent: '*' },
+                { Allow: '/' },
+                { BlankLine: true },
+                { Comment: 'Host' },
+                { Host: process.env.CANONICAL_URL },
+                { BlankLine: true },
+                { Comment: 'Sitemaps' },
+                { Sitemap: `https://${process.env.CANONICAL_URL}/sitemap.xml` },
+            ],
+        }],
         ['@nuxtjs/sitemap', { autoLastmod: true }]
     ],
-    googleFonts: {
-        families: {
-            Inter: true
-        }
-    },
-    fonts: {
-        families: [
-            { name: 'Hubot Sans Black', provider: 'local' }
-        ],
-        priority: 'local'
-    },
-    robots: {
-        rules: [
-            { Comment: '*' },
-            { UserAgent: '*' },
-            { Allow: '/' },
-            { BlankLine: true },
-            { Comment: 'Host' },
-            { Host: process.env.CANONICAL_URL },
-            { BlankLine: true },
-            { Comment: 'Sitemaps' },
-            { Sitemap: `https://${process.env.CANONICAL_URL}/sitemap.xml` },
-        ],
-    },
-    gtag: {
-        id: process.env.GOOGLE_TAG || "G-XXXXXXXXXX"
-    },
     css: [
       '@/assets/index.css',
     ],

@@ -11,12 +11,13 @@
 }
 
 :root {
-    background-color: var(--color-a-white);
     font-family: 'Inter';
+    background-color: var(--color-a-white);
 }
 
 h1 {
+    font-family: 'Hubot Sans';
     font-weight: 900;
-    font-stretch: wider;
+    font-stretch: ultra-expanded;
     line-height: 3rem;
 }
