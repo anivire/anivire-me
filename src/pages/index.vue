@@ -65,12 +65,12 @@ const projectsData = ref([
     {
         icon: 'vscode-icons:file-type-next',
         langName: 'Next',
-        date: 'Current',
-        title: 'Tijoe',
-        link: 'https://tijoe.net/',
-        description: 'Home website with game-reviews, Twitch watch time leaderboards and self-hosted Twitch bot for russian streamer Tijoe.',
-        tags: ['Next', 'Typescript', 'Supabase', 'Twitch API', 'Prismic'],
-        cover: 'tijoe.webp'
+        date: 'Unnanounced',
+        title: 'Dotcreators',
+        link: '',
+        description: 'Dotcretors is a project which main goal is support and promote pixel artists, engange new audience and receive commission/job offers.',
+        tags: ['Next', 'Typescript', 'Supabase', 'Elysia'],
+        cover: 'dotcreators.webp'
     },
     {
         icon: 'vscode-icons:file-type-next',
