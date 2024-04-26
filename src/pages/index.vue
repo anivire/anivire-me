@@ -7,8 +7,8 @@
                 <h1 class="text-2xl flex flex-row justify-between items-center cursor-pointer font-hubot">Projects<Icon name="ri:arrow-right-up-line" class="text-4xl"/></h1>
             </a>
             <section class="grid sm:grid-cols-1 lg:grid-cols-2 gap-5">
-                <ProjectCard v-for="project in projectsData"
-                    :key="project.id"
+                <ProjectCard v-for="(project, index) in projectsData"
+                    :key="index"
                     :icon="project.icon"
                     :lang-name="project.langName"
                     :date="project.date"
@@ -27,8 +27,8 @@
             </a>
             <section class="md:grid flex flex-col grid-cols-3 gap-5">
                 <NuxtImg
-                    v-for="art in artsData"
-                    :key="art.id"
+                    v-for="(art, index) in artsData"
+                    :key="index"
                     loading="lazy" 
                     :class="art.size"
                     class="object-cover rounded-3xl h-full max-h-96 w-full" 
@@ -63,7 +63,16 @@ import Welcome from '../components/Welcome.vue';
 
 const projectsData = ref([
     {
-        id: 0,
+        icon: 'vscode-icons:file-type-next',
+        langName: 'Next',
+        date: 'Current',
+        title: 'Tijoe',
+        link: 'https://tijoe.net/',
+        description: 'Home website with game-reviews, Twitch watch time leaderboards and self-hosted Twitch bot for russian streamer Tijoe.',
+        tags: ['Next', 'Typescript', 'Supabase', 'Twitch API', 'Prismic'],
+        cover: 'tijoe.webp'
+    },
+    {
         icon: 'vscode-icons:file-type-next',
         langName: 'Next',
         date: 'Current',
@@ -75,7 +84,6 @@ const projectsData = ref([
     },
     
     // {
-    //     id: 1,
     //     icon: 'vscode-icons:file-type-nuxt',
     //     langName: 'Nuxt',
     //     date: 'Current',
@@ -87,7 +95,6 @@ const projectsData = ref([
     // },
     
     {
-        id: 2,
         icon: 'vscode-icons:file-type-gamemaker2',
         langName: 'GML',
         date: 'Current',
@@ -97,7 +104,6 @@ const projectsData = ref([
         tags: ['GML', 'GameMaker Studio 2'],
         cover: 'scrapped-1.gif'
     },{
-        id: 3,
         icon: 'vscode-icons:file-type-nuxt',
         langName: 'Nuxt',
         date: 'Current',
@@ -107,7 +113,6 @@ const projectsData = ref([
         tags: ['Nuxt', 'Typescript', 'Spotify API'],
         cover: 'me.webp'
     },{
-        id: 4,
         icon: 'vscode-icons:file-type-typescript-official',
         langName: 'Typescript',
         date: 'Current',
@@ -117,7 +122,6 @@ const projectsData = ref([
         tags: ['Typescript'],
         cover: 'twitch-api-ts-wrapper.webp'
     }, {
-        id: 5,
         icon: 'vscode-icons:file-type-vue',
         langName: 'Vue',
         date: 'March 2023',
@@ -127,7 +131,6 @@ const projectsData = ref([
         tags: ['Vue', 'Typescript'],
         cover: 'invoke.webp'
     }, {
-        id: 6,
         icon: 'vscode-icons:file-type-vue',
         langName: 'Vue',
         date: 'March 2023',
@@ -141,39 +144,30 @@ const projectsData = ref([
 
 const artsData = ref([
     {
-        id: 0,
         size: 'col-span-2',
         src: '4.webp',
     }, {
-        id: 1,
         size: 'col-span-1',
         src: '8.webp',
     }, {
-        id: 2,
         size: 'col-span-1',
         src: '3.webp',
     }, {
-        id: 3,
         size: 'col-span-1',
         src: '5.webp',
     }, {
-        id: 4,
         size: 'col-span-1',
         src: '1.webp',
     }, {
-        id: 5,
         size: 'col-span-1',
         src: '6.webp',
     }, {
-        id: 6,
         size: 'col-span-2',
         src: '7.webp',
     }, {
-        id: 7,
         size: 'col-span-2',
         src: '9.webp',
     }, {
-        id: 8,
         size: 'col-span-1',
         src: '2.webp',
     }
