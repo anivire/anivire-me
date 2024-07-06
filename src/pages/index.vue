@@ -65,10 +65,10 @@ const projectsData = ref([
     {
         icon: 'vscode-icons:file-type-next',
         langName: 'Next',
-        date: 'Unnanounced',
+        date: 'Current',
         title: 'Dotcreators',
         link: 'https://dotcreators.xyz/',
-        description: 'Dotcretors is a project which main goal is support and promote pixel artists, engange new audience and receive commission/job offers.',
+        description: 'Become part of a community of amazing pixel artists. Suggest your favorite authors or yourself. Follow, share and grow together!',
         tags: ['Next', 'Typescript', 'Supabase', 'Elysia', 'Zustand'],
         cover: 'dotcreators.png'
     },
