@@ -112,15 +112,6 @@ const projectsData = ref([
         description: 'My open source web/game-dev and art portfolio.',
         tags: ['Nuxt', 'Typescript', 'Spotify API'],
         cover: 'me.webp'
-    },{
-        icon: 'vscode-icons:file-type-typescript-official',
-        langName: 'Typescript',
-        date: 'Current',
-        title: 'Twitch Embed TS wrapper',
-        link: 'https://github.com/anivire/twitch-embed-ts',
-        description: 'Small Twitch Embed API Typescript wrapper.',
-        tags: ['Typescript'],
-        cover: 'twitch-api-ts-wrapper.webp'
     }, {
         icon: 'vscode-icons:file-type-vue',
         langName: 'Vue',
