@@ -41,7 +41,7 @@
         <section id="about" class="flex flex-col gap-5 px-10 mb-24">
             <section class="flex flex-col items-center justify-between gap-5">
                 <nav class="flex flex-row gap-5 text-ablack text-4xl">
-                    <a target="_blank" href="mailto:anivire.work@gmail.com"><Icon class="hover:scale-125 cursor-pointer transition duration-200 ease-in-out" name="mdi:gmail"/></a>
+                    <a target="_blank" href="mailto:hi@anivire.xyz"><Icon class="hover:scale-125 cursor-pointer transition duration-200 ease-in-out" name="mdi:gmail"/></a>
                     <a target="_blank" href="https://discordapp.com/users/207839349209956352"><Icon class="hover:scale-125 cursor-pointer transition duration-200 ease-in-out" name="ic:baseline-discord"/></a>
                     <a target="_blank" href="https://t.me/maconee"><Icon class="hover:scale-125 cursor-pointer transition duration-200 ease-in-out" name="ic:baseline-telegram"/></a>
                     <a target="_blank" href="https://github.com/anivire"><Icon class="hover:scale-125 cursor-pointer transition duration-200 ease-in-out" name="skill-icons:github-light"/></a>
