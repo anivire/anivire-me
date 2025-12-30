@@ -18,7 +18,7 @@
     "@vueuse/core": "^10.1.2",
     "@vueuse/nuxt": "^10.1.2",
     "autoprefixer": "^10.4.14",
-    "nuxt": "^3.11.2",
+    "nuxt": "^3.20.2",
     "nuxt-font-loader": "^2.3.4",
     "nuxt-icon": "^0.4.1",
     "postcss": "^8.4.31",
