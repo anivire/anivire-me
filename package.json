@@ -12,7 +12,7 @@
   "devDependencies": {
     "@nuxt/image-edge": "^1.0.0-28059208.2abef1b",
     "@nuxtjs/google-fonts": "^3.0.2",
-    "@nuxtjs/sitemap": "^5.1.2",
+    "@nuxtjs/sitemap": "^5.3.5",
     "@types/aos": "^3.0.7",
     "@types/node": "^18",
     "@vueuse/core": "^10.1.2",
