@@ -4,7 +4,7 @@ export const PROJECT_DATA = ref([
     title: 'dotcreators',
     link: 'https://dotcreators.xyz/',
     description:
-      'Platform for exploring and tracking account growth of pixel artists.',
+      'Platform for exploring and tracking pixel artists account growth.',
     tags: ['Next', 'Typescript', 'Elysia'],
     cover: 'dotcreators.png',
   },
