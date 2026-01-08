@@ -1,6 +1,7 @@
 require('dotenv').config();
 
 export default defineNuxtConfig({
+  compatibilityDate: '2026-01-02',
   app: {
     head: {
       script: [
@@ -11,13 +12,6 @@ export default defineNuxtConfig({
           'data-website-id': process.env.UNAMI_ANALYTICS,
         },
       ],
-    },
-  },
-  runtimeConfig: {
-    public: {
-      CLIENT_ID: process.env.CLIENT_ID,
-      CLIENT_SECRET: process.env.CLIENT_SECRET,
-      REFRESH_TOKEN: process.env.REFRESH_TOKEN,
     },
   },
   postcss: {
@@ -44,22 +38,12 @@ export default defineNuxtConfig({
       '@nuxtjs/google-fonts',
       {
         families: {
-          Inter: true,
+          Inter: [400, 500, 600, 700],
+          'Hubot Sans': [400, 500, 600, 700, 800, 900],
         },
-      },
-    ],
-    [
-      '@nuxt/fonts',
-      {
-        families: [
-          {
-            name: 'Hubot Sans',
-            src: '/Hubot-Sans.woff2',
-            provider: 'local',
-            weight: 'black',
-          },
-        ],
-        priority: 'local',
+        display: 'swap',
+        download: true,
+        inject: true,
       },
     ],
     [
@@ -81,9 +65,13 @@ export default defineNuxtConfig({
     ['@nuxtjs/sitemap', { autoLastmod: true }],
   ],
   css: ['@/assets/index.css'],
+
   site: {
     url: process.env.CANONICAL_URL,
     name: 'anivire',
+    description:
+      "HELLO, HALLO, HIII, 👋, SUP, YO! I'm fullstack web developer and 2D digital artist.",
+    defaultLocale: 'en',
   },
   sitemap: {
     xslColumns: [
@@ -97,8 +85,8 @@ export default defineNuxtConfig({
       },
     ],
   },
-  routeRules: {
-    '/': { sitemap: { changefreq: 'monthly', priority: 0.7 } },
-  },
+  // routeRules: {
+  //   '/': { sitemap: { changefreq: 'monthly', priority: 0.7 } },
+  // },
   ssr: true,
 });

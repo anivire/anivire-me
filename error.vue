@@ -1,17 +1,17 @@
 <template>
-  <CustomError :errorCode="error ? String(error.statusCode) : 'lol'"/>
+  <CustomError :errorCode="error ? String(error.statusCode) : 'lol'" />
 </template>
 
 <script setup>
-import CustomError from './src/components/navigation/CustomError.vue';
+import CustomError from './src/components/error.vue';
 
 const props = defineProps({
-  error: Object
-})
+  error: Object,
+});
 </script>
 
 <style>
 body {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 </style>

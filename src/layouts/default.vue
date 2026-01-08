@@ -1,10 +1,10 @@
 <template>
-    <main class="flex flex-col min-h-screen mx-auto max-w-7xl relative">
-        <TopNavigation class="w-full absolute z-20 "/>
-        <NuxtPage class="page grow"/>
-    </main>
+  <main class="relative mx-auto flex min-h-screen max-w-7xl flex-col">
+    <TopNavigation class="absolute z-20 w-full" />
+    <NuxtPage class="page grow" />
+  </main>
 </template>
 
 <script setup lang="ts">
-import TopNavigation from '../components/navigation/TopNavigation.vue';
+import TopNavigation from '../components/navigation.vue';
 </script>
