@@ -5,7 +5,7 @@
       :href="link"
       ref="target"
       :style="{ transform: cardTransform, transition: 'all 0.25s ease-out' }"
-      class="flex flex-col justify-between gap-3 rounded-3xl bg-gradient-to-r from-ablack to-ablack/90 p-6 text-awhite md:gap-5 md:p-8"
+      class="flex h-full flex-col justify-between gap-3 rounded-3xl bg-gradient-to-r from-ablack to-ablack/90 p-6 text-awhite md:gap-5 md:p-8"
     >
       <section class="flex flex-col gap-3">
         <section class="flex flex-row justify-between font-semibold">
@@ -21,23 +21,25 @@
         <p class="text-sm md:text-base">{{ description }}</p>
       </section>
 
-      <NuxtImg
-        v-if="cover"
-        :src="cover"
-        alt="Cover image"
-        loading="lazy"
-        width="600"
-        class="max-h-40 w-full rounded-lg object-cover"
-      />
+      <div class="flex flex-col gap-5">
+        <NuxtImg
+          v-if="cover"
+          :src="cover"
+          alt="Cover image"
+          loading="lazy"
+          width="600"
+          class="max-h-40 w-full rounded-lg object-cover"
+        />
 
-      <section class="flex flex-row flex-wrap gap-2 md:gap-3">
-        <p
-          v-for="tag in tags"
-          class="rounded-full bg-awhite p-0.5 px-3 text-sm font-bold text-ablack"
-        >
-          {{ tag }}
-        </p>
-      </section>
+        <section class="flex flex-row flex-wrap gap-2 md:gap-3">
+          <p
+            v-for="tag in tags"
+            class="rounded-full bg-awhite p-0.5 px-3 text-sm font-bold text-ablack"
+          >
+            {{ tag }}
+          </p>
+        </section>
+      </div>
     </a>
   </article>
 </template>

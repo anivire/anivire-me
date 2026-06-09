@@ -34,14 +34,17 @@ const rotate = ref(0);
 const username = ref('ANIVIRE');
 const randomizedUsername = ref('ANIVIRE');
 
+let timer: ReturnType<typeof setInterval> | undefined;
+let usernameTimer: ReturnType<typeof setInterval> | undefined;
+
 const randomizeUsername = () => {
-  const leetChars: { [key: string]: string } = {
+  const leetChars: Record<string, string> = {
     A: '4',
     E: '3',
     I: '1',
   };
 
-  const vanillaChars: { [key: string]: string } = {
+  const vanillaChars: Record<string, string> = {
     '4': 'A',
     '3': 'E',
     '1': 'I',
@@ -49,28 +52,33 @@ const randomizeUsername = () => {
 
   const index = Math.floor(Math.random() * randomizedUsername.value.length);
   const charToReplace = username.value[index];
-  let leetChar = '';
 
-  let random = Math.round(Math.random());
-  if (random == 0) {
-    leetChar = leetChars[charToReplace.toUpperCase()] || charToReplace;
-  } else {
-    leetChar = vanillaChars[charToReplace.toUpperCase()] || charToReplace;
-  }
+  const random = Math.round(Math.random());
 
-  const leetUsername =
+  const replacement =
+    random === 0
+      ? leetChars[charToReplace.toUpperCase()] || charToReplace
+      : vanillaChars[randomizedUsername.value[index].toUpperCase()] ||
+        randomizedUsername.value[index];
+
+  randomizedUsername.value =
     randomizedUsername.value.slice(0, index) +
-    leetChar +
+    replacement +
     randomizedUsername.value.slice(index + 1);
-
-  randomizedUsername.value = leetUsername;
 };
 
-const timer = setInterval(() => {
-  rotate.value = Math.floor(Math.random() * 5) - 2;
-}, 300);
+onMounted(() => {
+  timer = setInterval(() => {
+    rotate.value = Math.floor(Math.random() * 5) - 2;
+  }, 300);
 
-const usernameTimer = setInterval(() => {
-  randomizeUsername();
-}, 100);
+  usernameTimer = setInterval(() => {
+    randomizeUsername();
+  }, 100);
+});
+
+onBeforeUnmount(() => {
+  if (timer) clearInterval(timer);
+  if (usernameTimer) clearInterval(usernameTimer);
+});
 </script>

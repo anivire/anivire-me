@@ -1,5 +1,14 @@
 export const PROJECT_DATA = ref([
   {
+    icon: 'catppuccin:java',
+    title: 'Legendary Gemstones',
+    link: 'https://modrinth.com/mod/legendary-gemstones',
+    description:
+      'Add various gemstones to your world, that can be used to upgrade weapons, tools and armor!',
+    tags: ['Java', 'Minecraft'],
+    cover: 'gemstones.png',
+  },
+  {
     icon: 'simple-icons:nextdotjs',
     title: 'dotcreators',
     link: 'https://dotcreators.xyz/',
